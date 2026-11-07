@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f6">
+  <meta name="description" content="Leanne Khan helps thoughtful businesses strengthen customer relationships, marketing and the systems behind their growth.">
+  <title>Leanne Khan — Marketing, Customer Experience & Systems</title>
+  <style>
+    :root {
+      --paper: #f7f8f6;
+      --white: #fff;
+      --ink: #26353a;
+      --muted: #68777c;
+      --teal: #285c64;
+      --teal-dark: #204950;
+      --line: #cbd9d8;
+      --wash: #eaf1f0;
+      --sand: #f1ece4;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "Segoe UI", Arial, sans-serif;
+      --width: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.65 var(--sans); }
+    a { color: inherit; }
+    .wrap { width: min(var(--width), calc(100% - 48px)); margin-inline: auto; }
+    .topbar { border-bottom: 1px solid var(--line); background: rgba(247,248,246,.94); }
+    .nav { min-height: 76px; display:flex; align-items:center; justify-content:space-between; gap:28px; }
+    .brand { color:var(--teal); font-weight:700; letter-spacing:.07em; text-decoration:none; font-size:15px; }
+    .navlinks { display:flex; align-items:center; gap:28px; color:var(--muted); font-size:13px; }
+    .navlinks a { text-decoration:none; }
+    .navlinks a:hover, .textlink:hover { color:var(--teal); }
+    .nav-cta { border:1px solid var(--teal); color:var(--teal)!important; padding:9px 15px; border-radius:2px; }
+    .hero { padding:100px 0 82px; background: radial-gradient(ellipse at 84% 26%, #e9f0ed 0, transparent 34%), var(--paper); }
+    .eyebrow { margin:0 0 18px; color:var(--teal); font-size:11px; font-weight:700; letter-spacing:.17em; text-transform:uppercase; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { max-width:850px; margin-bottom:22px; font:400 clamp(48px,7.1vw,82px)/1.04 var(--serif); letter-spacing:-.045em; color:#24363b; }
+    h1 em { color:var(--teal); font-weight:400; }
+    .hero-copy { max-width:630px; margin-bottom:30px; color:#56666b; font-size:18px; }
+    .actions { display:flex; flex-wrap:wrap; align-items:center; gap:20px; }
+    .button { display:inline-flex; justify-content:center; align-items:center; gap:12px; min-height:48px; padding:12px 20px; border:1px solid var(--teal); background:var(--teal); color:#fff; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:.035em; transition:background .2s, transform .2s; }
+    .button:hover { background:var(--teal-dark); transform:translateY(-1px); }
+    .textlink { color:var(--teal); text-decoration:none; font-size:13px; font-weight:700; }
+    .hero-note { margin-top:62px; padding-top:17px; border-top:1px solid var(--line); display:flex; gap:35px; color:var(--muted); font-size:12px; }
+    .hero-note span::before { content:""; display:inline-block; width:6px; height:6px; margin:0 9px 1px 0; border-radius:50%; background:#7b9c98; }
+    section { padding:82px 0; }
+    .section-head { display:grid; grid-template-columns: .78fr 1.22fr; gap:48px; align-items:start; margin-bottom:38px; }
+    .section-head h2 { margin:0; font:400 clamp(34px,4vw,49px)/1.12 var(--serif); letter-spacing:-.025em; }
+    .section-head p { max-width:560px; margin:4px 0 0; color:var(--muted); }
+    .about { background:var(--white); border-top:1px solid #edf0ed; border-bottom:1px solid #edf0ed; }
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:70px; }
+    .about-grid p { color:var(--muted); }
+    .about-grid .lead { color:var(--ink); font:400 22px/1.55 var(--serif); }
+    .pillars { display:grid; grid-template-columns:1fr 1fr; gap:0 25px; padding-top:5px; }
+    .pillar { padding:16px 0; border-top:1px solid var(--line); }
+    .pillar b { display:block; color:var(--teal); font:400 18px var(--serif); }
+    .pillar span { color:var(--muted); font-size:13px; }
+    .work { background:#f2f5f3; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { min-height:350px; padding:25px; display:flex; flex-direction:column; background:var(--white); border:1px solid #e1e9e6; }
+    .card-top { display:flex; justify-content:space-between; gap:10px; margin-bottom:48px; color:var(--teal); font-size:10px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+    .card-no { color:#9bacaa; font:italic 17px var(--serif); }
+    .card h3 { margin-bottom:12px; font:400 25px/1.2 var(--serif); }
+    .card p { margin-bottom:24px; color:var(--muted); font-size:14px; }
+    .metric { margin-top:auto; padding-top:16px; border-top:1px solid var(--line); color:var(--teal); font-size:12px; }
+    .metric strong { display:block; font:400 28px var(--serif); }
+    .case-note { margin:22px 0 0; color:var(--muted); font-size:12px; }
+    .approach { background:var(--white); }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
+    .step { padding-top:17px; border-top:1px solid var(--teal); }
+    .step .n { color:#91a7a4; font:italic 17px var(--serif); }
+    .step h3 { margin:16px 0 8px; font:400 23px var(--serif); }
+    .step p { color:var(--muted); font-size:14px; }
+    .services { background:var(--sand); }
+    .service-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:0 40px; }
+    .service { padding:22px 0; border-top:1px solid #d8d1c7; }
+    .service h3 { margin:0 0 7px; font:400 21px var(--serif); }
+    .service p { margin:0; color:#697476; font-size:14px; }
+    .experience { background:var(--white); }
+    .resume-grid { display:grid; grid-template-columns:1.2fr .8fr; gap:62px; }
+    .timeline-item { padding:0 0 24px 22px; border-left:1px solid var(--line); position:relative; }
+    .timeline-item::before { content:""; position:absolute; left:-5px; top:6px; width:9px; height:9px; border-radius:50%; background:var(--teal); }
+    .timeline-item h3 { margin:0; font:400 21px/1.25 var(--serif); }
+    .timeline-meta { margin:4px 0 9px; color:var(--teal); font-size:12px; font-weight:600; }
+    .timeline-item p { margin:0; color:var(--muted); font-size:13px; }
+    .side-block { margin-bottom:27px; }
+    .side-block h3 { margin:0 0 12px; padding-bottom:9px; border-bottom:1px solid var(--line); color:var(--teal); font:400 22px var(--serif); }
+    .taglist { display:flex; flex-wrap:wrap; gap:7px; }
+    .tag { padding:5px 9px; border:1px solid #d7e2df; background:#f7f9f7; color:#52656a; font-size:11px; }
+    .side-list { margin:0; padding-left:17px; color:var(--muted); font-size:13px; }
+    .side-list li { margin:0 0 7px; }
+    .contact { padding:90px 0; background:var(--teal); color:#fff; }
+    .contact .eyebrow { color:#c5dcda; }
+    .contact-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:60px; align-items:end; }
+    .contact h2 { max-width:650px; margin:0; font:400 clamp(38px,5.2vw,62px)/1.1 var(--serif); }
+    .contact p { color:#d6e4e1; }
+    .contact .button { background:#fff; color:var(--teal); border-color:#fff; }
+    .contact .button:hover { background:#e9f1ef; }
+    .contact a:not(.button) { color:#fff; }
+    footer { padding:22px 0; background:#204950; color:#cbd8d6; font-size:11px; }
+    .footer-inner { display:flex; justify-content:space-between; gap:20px; }
+    @media (max-width:760px) {
+      .wrap { width:min(100% - 34px,var(--width)); }
+      .nav { min-height:66px; }
+      .navlinks { gap:13px; font-size:12px; }
+      .navlinks a:not(.nav-cta) { display:none; }
+      .hero { padding:75px 0 56px; }
+      .hero-note { margin-top:46px; flex-wrap:wrap; gap:10px 20px; }
+      section { padding:62px 0; }
+      .section-head,.about-grid,.contact-grid { grid-template-columns:1fr; gap:20px; }
+      .pillars { gap:0 16px; }
+      .cards { grid-template-columns:1fr; }
+      .card { min-height:285px; }
+      .card-top { margin-bottom:30px; }
+      .steps { grid-template-columns:1fr; gap:22px; }
+      .service-grid { grid-template-columns:1fr; }
+      .resume-grid { grid-template-columns:1fr; gap:20px; }
+      .contact-grid { gap:28px; }
+      .footer-inner { flex-direction:column; gap:5px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">LEANNE KHAN</a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#services">Services</a>
+        <a class="nav-cta" href="#contact">Work with me</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <p class="eyebrow">Customer experience · Marketing · Systems</p>
+        <h1>Good work starts<br>with <em>understanding people.</em></h1>
+        <p class="hero-copy">I help businesses across industries make customer journeys clearer, marketing more intentional, and the work behind it easier to manage.</p>
+        <div class="actions"><a class="button" href="#work">Explore selected work <span aria-hidden="true">↓</span></a><a class="textlink" href="#contact">Have a project in mind? →</a></div>
+        <div class="hero-note"><span>Customer-first thinking</span><span>Practical systems</span><span>Considered marketing</span></div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">A little about me</p><h2>Thoughtful strategy.<br>Useful follow-through.</h2></div><p>I’m Leanne, a Johannesburg-based customer engagement, sales and business systems professional. I work across the parts of a business that shape how people discover, experience and return to a brand.</p></div>
+        <div class="about-grid">
+          <div><p class="lead">I like making the complicated feel clear, and helping good ideas turn into work people can actually use.</p><p>My experience spans remote sales and retention, digital marketing, customer journeys, CRM design, workflow improvement and hands-on business support. I bring a people-aware perspective to both the front-of-house experience and the systems working behind it.</p></div>
+          <div class="pillars">
+            <div class="pillar"><b>Customer relationships</b><span>Engagement, service, retention and sales</span></div>
+            <div class="pillar"><b>Marketing & brand</b><span>Audience insight, content and campaigns</span></div>
+            <div class="pillar"><b>Business systems</b><span>CRM, reporting and process improvement</span></div>
+            <div class="pillar"><b>Operations</b><span>Coordination, documentation and follow-through</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work" id="work">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">Selected work</p><h2>A few ways I’ve helped.</h2></div><p>A mix of customer-facing work, marketing support and practical systems. Each project starts by understanding what is getting in the way.</p></div>
+        <div class="cards">
+          <article class="card"><div class="card-top"><span>Sales & customer experience</span><span class="card-no">01</span></div><h3>Turning conversations into lasting customers</h3><p>At MOVA, I support customers across multiple accounts, tailoring conversations, handling objections and helping customers see value in continuing.</p><div class="metric"><strong>US$17,896</strong>cumulative sales by 30 October 2026; typically US$1,600–US$1,900 weekly</div></article>
+          <article class="card"><div class="card-top"><span>Marketing · Fashion</span><span class="card-no">02</span></div><h3>A clearer path from discovery to purchase</h3><p>For a fashion client, I designed a customer journey and sales funnel connecting Instagram content to landing pages, conversion, payment and after-sales.</p><div class="metric"><strong>Joined-up journey</strong>from social discovery through post-purchase</div></article>
+          <article class="card"><div class="card-top"><span>Operations & automation</span><span class="card-no">03</span></div><h3>Capturing leads while the owner is on the job</h3><p>Designed a chatbot-led enquiry and follow-up flow for a pest-control business, using WhatsApp and payment notifications to support the customer journey.</p><div class="metric"><strong>7 of 10</strong>daily leads captured in the reported trial</div></article>
+          <article class="card"><div class="card-top"><span>CRM & workflow design</span><span class="card-no">04</span></div><h3>Bringing case work into one organised view</h3><p>Built a custom CRM and case-tracking dashboard for a legal practice, with structured records, document routing and shared progress visibility.</p><div class="metric"><strong>Made for the team</strong>designed around real operational needs</div></article>
+          <article class="card"><div class="card-top"><span>Marketing support</span><span class="card-no">05</span></div><h3>Helping brands show up with intention</h3><p>Supported content planning, audience research and campaign recommendations across fashion and healthcare clients, including monthly performance summaries.</p><div class="metric"><strong>Research to content</strong>audiences, calendars and campaign ideas</div></article>
+          <article class="card"><div class="card-top"><span>Digital presence</span><span class="card-no">06</span></div><h3>Building a welcoming online home</h3><p>Created a preschool website and supported its social channels, newsletters, family communications and day-to-day operations.</p><div class="metric"><strong>End-to-end support</strong>website, content and community touchpoints</div></article>
+          <article class="card"><div class="card-top"><span>Remote sales · Web36 Solutions</span><span class="card-no">07</span></div><h3>Consistent sales against a weekly goal</h3><p>Managed two assigned, low-traffic accounts, initiated customer conversations, followed up consistently and used proactive conflict management to support sales conversion.</p><div class="metric"><strong>US$500 / week</strong>weekly sales target consistently achieved</div></article>
+          <article class="card"><div class="card-top"><span>Training · Logoi</span><span class="card-no">08</span></div><h3>Preparing people for remote sales work</h3><p>Developed and facilitated the Logoi Sales Accelerator, covering digital literacy, SaaS sales basics, international communication and collaboration tools.</p><div class="metric"><strong>1 of 10</strong>participants graduated into a remote role</div></article>
+          <article class="card"><div class="card-top"><span>Learning · Zerowan</span><span class="card-no">09</span></div><h3>Helping an 8-year-old learn to read</h3><p>Developed an early childhood programme focused on emotional awareness, self-regulation and a positive teacher-child relationship while supporting the learner’s reading development.</p><div class="metric"><strong>Over 6 months</strong>from phonics foundations to basic reading</div></article>
+        </div>
+        <p class="case-note">Figures reflect experience described in my CV and project notes; outcomes are presented in context and are not guarantees.</p>
+      </div>
+    </section>
+    <section class="experience" id="experience">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">Experience & background</p><h2>The wider picture.</h2></div><p>My work has moved between customer-facing roles, marketing, systems and hands-on operations. Here is the broader experience behind the selected projects.</p></div>
+        <div class="resume-grid">
+          <div>
+            <article class="timeline-item"><h3>Remote Sales & Customer Engagement Specialist</h3><div class="timeline-meta">MOVA · Remote · 14 August 2026–Present</div><p>Sales across multiple accounts, personalised customer conversations, objection handling and retention. Generated US$17,896 by 30 October 2026, averaged approximately US$1,600–US$1,900 in weekly revenue, closed about US$600 in custom sales, and converted 30+ customers to resubscribe or activate auto-renewal.</p></article>
+            <article class="timeline-item"><h3>Systems Designer & Consultant</h3><div class="timeline-meta">Freelance · Remote · 2024–August 2026</div><p>Designed lead capture and follow-up for a pest-control business; a custom CRM, case dashboard and document workflow for a legal practice; and marketing support with a planned campaign each month.</p></article>
+            <article class="timeline-item"><h3>Sales Agent</h3><div class="timeline-meta">36 Web Solutions · Remote · November 2025–January 2026</div><p>Managed two assigned low-traffic accounts, initiated customer conversations, maintained follow-ups, used proactive conflict management, and consistently achieved the US$500 weekly sales target.</p></article>
+            <article class="timeline-item"><h3>Content & Marketing Support</h3><div class="timeline-meta">Worded Brands · January 2023–November 2024</div><p>Supported six client brands over time across fashion and healthcare. Researched audiences and competitors; prepared profiles, content calendars and campaign recommendations; monitored performance; designed a fashion customer journey; and developed social direction for a healthcare client. Also supported scheduling, meetings and financial tracking.</p></article>
+            <article class="timeline-item"><h3>Web Designer → Digital Marketing & Operations Support</h3><div class="timeline-meta">Jolly Kids Preschool · Krugersdorp · August 2021–December 2022</div><p>Built the preschool website on Google Sites and supported social channels, newsletters, promotions, parent enquiries, attendance records, scheduling and supplier communication. Helped maintain connection for a preschool community of approximately 98 children.</p></article>
+            <article class="timeline-item"><h3>Founder & Learning Facilitator</h3><div class="timeline-meta">Zerowan · December 2024–August 2025</div><p>Developed an early childhood programme focused on emotional awareness, self-regulation and positive teacher-child relationships. Supported an eight-year-old learner from basic phonetic understanding to basic reading over six months.</p></article>
+            <article class="timeline-item"><h3>Programme Facilitator & Outreach</h3><div class="timeline-meta">Logoi Sales Accelerator · February–July 2026</div><p>Worked with two co-organisers to connect with software developers and agencies about sales staffing needs, recruit suitable participants and train them for direct onboarding. One graduate from a cohort of 10 people.</p></article>
+          </div>
+          <aside>
+            <div class="side-block"><h3>Core skills</h3><div class="taglist"><span class="tag">Customer engagement</span><span class="tag">Digital sales</span><span class="tag">Retention</span><span class="tag">Issue resolution</span><span class="tag">CRM design</span><span class="tag">Business analysis</span><span class="tag">Workflow improvement</span><span class="tag">Automation</span><span class="tag">Dashboards</span><span class="tag">Lead capture</span><span class="tag">Campaign planning</span><span class="tag">Audience research</span><span class="tag">Content calendars</span><span class="tag">Reporting</span><span class="tag">Administration</span><span class="tag">Scheduling</span><span class="tag">Financial tracking</span><span class="tag">Stakeholder coordination</span></div></div>
+            <div class="side-block"><h3>Tools</h3><p style="color:var(--muted);font-size:13px;margin:0">n8n, Make, Google Forms, WhatsApp Business, Paystack, HubSpot, Zoho CRM, Airtable, Google Workspace, Slack, ClickUp, Canva, Meta Business Suite, Mailchimp, WordPress, Zapier, ChatGPT, Claude and Gemini.</p></div>
+            <div class="side-block"><h3>Certifications</h3><ul class="side-list"><li>Social Media Marketing — Meta, 2025</li><li>Attract & Engage Customers with Digital Marketing — Coursera, 2024</li><li>Fundamentals of Digital Marketing & E-Commerce — Google Digital Garage, 2023</li></ul></div>
+            <div class="side-block"><h3>How I work</h3><p style="color:var(--muted);font-size:13px;margin:0">Remote collaboration, international customer support and availability for US business hours.</p></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="approach">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">How I work</p><h2>Make it useful, then make it better.</h2></div><p>Whether the need is marketing direction or a smoother process, I keep the work grounded in people, priorities and what can realistically be put into practice.</p></div>
+        <div class="steps">
+          <article class="step"><span class="n">01</span><h3>Listen & map</h3><p>Understand the business, its customers and the points where things feel harder than they should.</p></article>
+          <article class="step"><span class="n">02</span><h3>Shape a clear plan</h3><p>Agree on the most useful next steps, the message or process, and how we’ll know it’s helping.</p></article>
+          <article class="step"><span class="n">03</span><h3>Build & refine</h3><p>Put the work into action, learn from real responses, and improve what needs adjusting.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">Work with me</p><h2>Support that meets you where you are.</h2></div><p>Flexible project support for small businesses, growing teams and founders who want a thoughtful partner to help move something forward.</p></div>
+        <div class="service-grid">
+          <article class="service"><h3>Marketing, brand visibility & networking</h3><p>Audience research, customer journey reviews, content and campaign planning, and practical networking support for businesses across industries. Fashion is one area where I have direct experience.</p></article>
+          <article class="service"><h3>Customer experience & sales</h3><p>Review the path from first enquiry to repeat business, strengthen responses, and make follow-up more consistent.</p></article>
+          <article class="service"><h3>Operations & workflow improvement</h3><p>Map repetitive work and design clearer processes, simple tracking and sensible automation opportunities.</p></article>
+          <article class="service"><h3>Project-based marketing support</h3><p>Audience research, campaign coordination, content calendars and reporting to help ideas reach the right people.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid">
+        <div><p class="eyebrow">Start a conversation</p><h2>Let’s work out what would help most.</h2></div>
+        <div><p>Tell me what you’re working on, where you feel stuck, or what you’d like to make possible. We can start with a simple conversation.</p><a class="button" href="mailto:leannejkhan@gmail.com?subject=Let%E2%80%99s%20work%20together">Get in touch <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© 2026 Leanne Khan · Johannesburg, South Africa</span><span>Customer engagement · Marketing · Systems</span></div></footer>
+</body>
+</html>

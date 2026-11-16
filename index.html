@@ -105,7 +105,7 @@
       .wrap { width:min(100% - 34px,var(--width)); }
       .nav { min-height:66px; }
       .navlinks { gap:13px; font-size:12px; }
-      .navlinks a:not(.nav-cta) { display:none; }
+      .navlinks a:not(.nav-cta):not(.career-nav) { display:none; }
       .hero { padding:75px 0 56px; }
       .hero-note { margin-top:46px; flex-wrap:wrap; gap:10px 20px; }
       section { padding:62px 0; }
@@ -127,6 +127,7 @@
     <nav class="nav wrap" aria-label="Main navigation">
       <a class="brand" href="#home">LEANNE KHAN</a>
       <div class="navlinks">
+        <a class="career-nav" href="career/index.html">Career portfolios</a>
         <a href="#about">About</a><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#services">Services</a>
         <a class="nav-cta" href="#contact">Work with me</a>
       </div>
